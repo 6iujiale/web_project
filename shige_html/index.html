@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <style>
+        @media screen and (max-width:576px) {
+            .lunbo {
+                height: 280px;
+            }
+
+            #poet_newwork .bd img {
+                width: 40%;
+                height: 250px;
+            }
+
+            #poet_newwork .bd p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                /* 只显示6行 */
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+            }
+
+            #poet_newwork .bd .newwork h6 {
+                padding-bottom: 0px;
+            }
+
+            #poet_newwork .bd .newwork p {
+                -webkit-line-clamp: 2;
+                font-size: 16px;
+
+            }
+
+            #poet_newwork .poet_introduction {
+                width: 60%;
+                height: 250px;
+            }
+
+            #poet_newwork .newwork {
+                width: 100%;
+                height: 100px;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <!-- 头部顶部 -->
+            <div class="row row_x border-bottom border-4 border-danger mb-2 bg-white" id="header_tp">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <!-- 网站logo -->
+                    <div class="logo">
+                        <img src="./images/header_logo.png" alt="">
+                    </div>
+                    <!-- 用户信息 -->
+                    <div class="user d-flex flex-row align-items-end align-itens mx-3">
+                        <img src="./images/header_user.jpg" alt="用户头像"
+                            class="img-thumbnail rounded-circle border-danger border-1">
+                        <a href="./login.html"><span style="color: black;">刘佳乐</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 头部尾部 -->
+            <div class="row" id="header_bm">
+                <!-- 导航栏-诗文 -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-2 d-flex" id="nav_list">
+                    <a href="./poetry.html" class="nav_title my-auto flex-wrap">诗文</a>
+                    <div class="nav_list_right d-flex flex-row" style="flex-flow:row wrap">
+                        <a href="#">唐诗三百首</a>
+                        <a href="#">古诗三百</a>
+                        <a href="#">宋词三百</a>
+                        <a href="#">小学古诗</a>
+                        <a href="#">宋词三百</a>
+                        <a href="./index.html" style="font-size: 19px;color: red;">首页</a>
+                    </div>
+                </div>
+                <!-- 导航栏-名句 -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-2 d-flex" id="nav_list">
+                    <a href="./famous_ sentence.html" class="nav_title my-auto flex-wrap">名句</a>
+                    <div class="nav_list_right d-flex flex-row" style="flex-flow:row wrap">
+                        <a href="#">季节</a>
+                        <a href="#">离别</a>
+                        <a href="#">爱国</a>
+                        <a href="#">爱情</a>
+                        <a href="#">祖国河山</a>
+                        <a href="#">思念故乡</a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!-- 导航栏-诗人 -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-2 d-flex" id="nav_list">
+                    <a href="./author.html" class="nav_title my-auto flex-wrap">诗人</a>
+                    <div class="nav_list_right d-flex flex-row" style="flex-flow:row wrap">
+                        <a href="#">名家</a>
+                        <a href="#">专栏</a>
+                        <a href="#">访谈</a>
+                        <a href="#">李白</a>
+                        <a href="#">李清照</a>
+                        <a href="#">唐宋八大家</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 模块一 新闻 -->
+        <div class="row mt-4 row_x" id="news">
+            <!-- 轮播图 -->
+            <div class="col-12">
+                <h3 class="text-center" style="font-size: 50px; color: rgb(223, 47, 47);font-weight: bold;">今日头条
+                </h3>
+                <!-- <img src="./images/new_hds.jpg" alt="" style="height: 120px;"> -->
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 lunbo">
+                <div class="content">
+                    <ul id="item" style="width: 100%;height: 100%;">
+                        <li class="item">
+                            <a href="#"><img src="./images/news_banner3.jpg"></a>
+
+                        </li>
+                        <li class="item">
+                            <a href="#"><img src="./images/news_banner5.jpg"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#"><img src="./images/news_banner2.jpg"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#"><img src="./images/news_banner4.jpg"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#"><img src="./images/news_banner1.jpg"></a>
+                        </li>
+                    </ul>
+                    <div id="btn-left">
+                        &lt;</div>
+                    <div id="btn-right">&gt;
+                    </div>
+                    <ul id="circle">
+
+                        <li class="circle" num="0"></li>
+                        <li class="circle" num="1"></li>
+                        <li class="circle white" num="2"></li>
+                        <li class="circle" num="3"></li>
+                        <li class="circle" num="4"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 d-flex flex-column border border-2 border-danger" id="news_list">
+                <div class="news_list_items p-2">
+                    <a href="#" id="items1" class="my-1 py-2">
+                        <h5>正在征稿中！“楚雄杯”新韵律诗歌征稿</h5>
+                        <p class="overflow_p">吴思敬:“关于百年新诗学案” | 百年新诗传统、诗歌教育与其他：吴思敬访谈录</p>
+                    </a>
+                    <a href="#" id="items1" class="my-2 py-2">
+                        <h5>中国诗歌网精选(《诗刊》2023年第8期)</h5>
+                        <p class="overflow_p">楚雄杯"新韵律诗歌征稿启事 | 楚雄州“驻镇诗人”招募遴选启事</p>
+                    </a>
+                    <a href="#" id="items2" class="my-2">
+                        <h5>诗词少年 天一府专场开赛</h5>
+                        <p class="overflow_p">
+                            4月8日上午，恰逢周末，春日的阳光照在孩子们的身上，焕发着青春的朝气和热情。孩子们认真的在签到墙签下了自己的名字。在天一府一层营销中心，初中组的同学们也已经进行了提前的热身赛。
+                        </p>
+                    </a>
+                    <a href="#" id="items2">
+                        <h5 class="mt-0">诗歌的现实与传播</h5>
+                        <p class="overflow_p">
+                            中国的优秀诗歌自古以来就是与现实紧密联系在一起的，为时代立传、为民族立碑、为人民立言，是当下诗歌必须坚守的永恒信仰。随着快捷、多元、开放的全媒体时代的到来，诗歌与传媒的融合发展又成为当下非常重要的文化现象。
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 模块二 古诗推荐 -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <h4 class="module_title">古诗推荐</h4>
+            </div>
+            <!-- 每日好诗 -->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="good_poetry">
+                <div
+                    class="hd d-flex flex-row  justify-content-between align-items-center border-3 border-bottom border-danger px-2">
+                    <h6>每日古诗</h6>
+                    <a href="#"><span>更多<i>>></i></span></a>
+                </div>
+                <div class="bd d-flex flex-row justify-content-between overflow_p">
+                    <img src="./images/poet_newwork_poet_dm.jpg" alt="每日好诗图片" class="">
+                    <div class="content p-3 text-center">
+                        <h4>江南春</h4>
+                        <small><strong>杜牧 〔唐代〕</strong></small>
+                        <p>千里莺啼绿映红，</p>
+                        <p>水村山郭酒旗风。</p>
+                        <p>南朝四百八十寺，</p>
+                        <p>多少楼台烟雨中。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 每日精选 -->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="good_select">
+                <div
+                    class="hd d-flex flex-row  justify-content-between align-items-center border-3 border-bottom border-danger px-2">
+                    <h6>每日精选</h6>
+                    <a href="#"><span>更多<i>>></i></span></a>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a href="#">每日精选（301期）</a>
+                            <i class="#">2023-04-09</i>
+                        </li>
+                        <li>
+                            <a href="#">每日精选（302期）</a>
+                            <i>2023-04-10</i>
+                        </li>
+                        <li>
+                            <a href="#">每日精选（303期）</a>
+                            <i>2023-04-11</i>
+                        </li>
+                        <li>
+                            <a href="#">每日精选（304期）</a>
+                            <i>2023-04-12</i>
+                        </li>
+                        <li>
+                            <a href="#">每日精选（305期）</a>
+                            <i>2023-04-13</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 模块三 诗人推荐 -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <h4 class="module_title">诗人推荐</h4>
+            </div>
+            <!-- 诗人新作品 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="poet_newwork">
+                <div class="hd d-flex flex-row  justify-content-between align-items-center px-2">
+                    <h6>名家新作</h6>
+                    <a href="#"><span>更多<i>>></i></span></a>
+                </div>
+                <div class="bd d-flex flex-row flex-wrap ">
+                    <img src="./images/poet_newwork_poet_lb.jpg" alt="李白的照片">
+                    <div class="poet_introduction">
+                        <h6>李白</h6>
+                        <p class="overflow_p">
+                            李白（701年2月28日—762年12月 ，字太白，号青莲居士,代表作有《望庐山瀑布》《行路难》《蜀道难》《将进酒》《早发白帝城》等。
+                            后世誉为“诗仙”，与诗圣杜甫并称“李杜”。
+                        </p>
+                    </div>
+                    <div class="newwork">
+                        <h6>将进酒</h6>
+                        <p class="overflow_p">你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔大海从来不会再往回流。
+                            你难道没有看见，在高堂上面对明镜，深沉悲叹那一头白发？早晨还是黑发到了傍晚却变得如雪一般。
+                            人生得意之时就要尽情的享受欢乐，不要让金杯无酒空对皎洁的明月。
+                            上天造就了我的才干就必然是有用处的，千两黄金花完了也能够再次获得。
+                            我们烹羊宰牛姑且作乐，一次性痛快地饮三百杯也不为多。
+                            岑勋，元丹丘，快点喝酒，不要停下来。我给你们唱一首歌，请你们为我倾耳细听。
+                            山珍海味的豪华生活算不上什么珍贵，只希望能醉生梦死而不愿清醒。
+                            自古以来圣贤都是被世人冷落的，只有会喝酒的人才能够留传美名。
+                            陈王曹植当年设宴平乐观，喝着名贵的酒纵情地欢乐。
+                            主人为何说钱不多？只管把这些钱用来买酒一起喝。
+                            名贵的五花良马，昂贵的千金皮衣，叫侍儿拿去统统换美酒，让我们一起来消除这无尽的长愁！</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 听诗 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" id="listen_poetry">
+                <div class="hd d-flex flex-row  justify-content-between align-items-center px-2">
+                    <h6>听诗</h6>
+                    <a href="#"><span>更多<i>>></i></span></a>
+                </div>
+                <div class="bd d-flex flex-row">
+                    <div class="listen_info my-auto">
+                        <img src="./images/poet_newwork_poet_lb.jpg"
+                            class="img-fluid img-thumbnail rounded-circle mt-3 mx-auto d-block" id="listen_img">
+                        <p class="text-center m-3">《李太白集》(作者:李白,朗读:慕容云海)</p>
+                    </div>
+                    <div class="listen_list d-flex flex-column">
+                        <ul>
+                            <li class="my-3 mx-auto">
+                                <img src="./images/listen_list_poet1.png" alt="" class="img-fluid rounded-circle">
+                                <span>《将进酒》</span>
+                            </li>
+                            <li class="my-3 mx-auto">
+                                <img src="./images/listen_list_poet2.png" alt="" class="img-fluid rounded-circle">
+                                <span>《静夜思》</span>
+                            </li>
+                            <li class="my-3 mx-auto">
+                                <img src="./images/listen_list_poet3.png" alt="" class="img-fluid rounded-circle">
+                                <span>《蜀道难》</span>
+                            </li>
+                            <li class="my-3 mx-auto">
+                                <img src="./images/listen_list_poet1.png" alt="" class="img-fluid rounded-circle">
+                                <span>《三五七言》</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 模块四 名句推荐 -->
+        <div class="row mt-4" id="famous_sentence">
+            <div class="col-12">
+                <h4 class="module_title">名句推荐</h4>
+            </div>
+            <!-- 季节 -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="season">
+                <!-- 季节头部 -->
+                <div class="hd">
+                    <h6>季节</h6>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>小荷才露尖尖角，早有蜻蜓立上头。——杨万里《小池》</li>
+                        <li>白雪却嫌春色晚，故穿庭树作飞花。——韩愈《春雪》</li>
+                        <li>空山新雨后，天气晚来秋。——王维《山居秋暝》</li>
+                        <li>孤舟蓑笠翁，独钓寒江雪。——柳宗元《江雪》</li>
+                        <li>白雪却嫌春色晚，故穿庭树作飞花。——韩愈《春雪》</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 思念 -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="patriotic">
+                <!-- 思念头部 -->
+                <div class="hd">
+                    <h6>思念</h6>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>一日不见，如三秋兮！——《诗经》</li>
+                        <li>曾经沧海难为水，除却巫山不是云。——元稹《离思》</li>
+                        <li>入我相思门，知我相思苦。——李白《三五七言》</li>
+                        <li>相思杳如梦，珠泪湿罗衣。——李白《学古思边》</li>
+                        <li>思君令人老，岁月忽已晚。——《行行重行行》</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 爱国 -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="miss">
+                <!-- 爱国头部 -->
+                <div class="hd">
+                    <h6>爱国</h6>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>国破尚如此，我何惜此头。——《就义诗》</li>
+                        <li>欲为圣明除弊事，肯将衰朽惜残年。——《左迁之蓝关》</li>
+                        <li>苟利国家生死以，岂因祸福避趋之。——《赴戍登程口》</li>
+                        <li>易水寒，壮士一去兮，不复还。——《易水歌》</li>
+                        <li>先天下之忧而忧，后天下之乐而乐。——《岳阳楼记》</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- 页脚左盒子 -->
+                <div class="col-xs-12 col-sm-8 col-md-8" id="ft_left">
+                    <h5 class="my-2">
+                        站点声明
+                    </h5>
+                    <ul>
+                        <li>1、本站创建目的为了诗词的学习和交流</li>
+                        <li>2、本站的学习文章经供参考，可转载，但不能用于商业目的</li>
+                        <li>3、对于本站有疑问或好的建议，欢迎邮箱123456@qq.com投稿</li>
+                    </ul>
+                </div>
+                <!-- 页脚右盒子 -->
+                <div class="col-xs-12 col-sm-4 col-md-4" id="ft_right">
+                    <div class="contact">
+                        <img src="./images/footer_right_wx.jpg " class="img-fluid d-block mx-auto mt-2">
+                        <span class="mb-2 mx-auto">微信号</span>
+                    </div>
+                    <div class="contact mx-2">
+                        <img src="./images/footer_right_wb.jpg" class="img-fluid d-block mx-auto mt-2">
+                        <span class="mb-2 mx-auto">微博号</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous">
+        </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

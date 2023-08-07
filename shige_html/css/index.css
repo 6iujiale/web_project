@@ -1,0 +1,328 @@
+.lunbo {
+    height: 390px;
+}
+
+.lunbo .content {
+    height: 100%;
+    position: relative;
+}
+
+#item {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+}
+
+.item.active {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#btn-left {
+    width: 30px;
+    height: 69px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 69px;
+    padding-left: 5px;
+    z-index: 10;
+    /*始终显示在图片的上层*/
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+    /*使按钮向上偏移居中对齐*/
+    cursor: pointer;
+    opacity: 0;
+    /*平时隐藏*/
+}
+
+.lunbo:hover #btn-left {
+    /*鼠标滑入，显示图标*/
+    opacity: 1;
+}
+
+#btn-right {
+    width: 26px;
+    height: 69px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 69px;
+    padding-left: 5px;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-60%);
+}
+
+.lunbo:hover #btn-right {
+    opacity: 1;
+}
+
+#circle {
+    height: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+#news_list {
+    height: 390px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#news_list .news_list_items p {
+    font-size: 12.9px;
+}
+
+#news_list .news_list_items a {
+    height: 84px;
+    background-color: gray;
+    display: block;
+}
+
+#news_list .news_list_items #items1 p {
+    -webkit-line-clamp: 1;
+}
+
+#news_list .news_list_items #items2 p {
+    -webkit-line-clamp: 2;
+}
+
+#news_list .news_list_items #items1 h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#news_list .news_list_items #items2 h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* #news_list .news_list_items #items2{
+    background-color: green;
+    display: block;
+} */
+
+
+#good_poetry {
+    height: 350px;
+}
+
+#good_poetry .hd,
+#good_select .hd {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(220, 218, 218);
+}
+
+#good_poetry .bd,
+#good_select .bd {
+    height: 300px;
+    background-color: skyblue;
+}
+
+#good_poetry .bd img {
+    width: 50%;
+    height: 300px;
+}
+
+#good_poetry .bd .content {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    overflow: hidden;
+}
+
+#good_poetry .bd .content p {
+    height: 30px;
+    font-size: 18px;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(202, 201, 201);
+}
+
+#good_select {
+    height: 350px;
+}
+
+#good_select .bd li {
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid red;
+    line-height: 60px;
+}
+
+#good_select .bd li a {
+    padding: 10px 20px;
+}
+
+#good_select .bd li i {
+    position: absolute;
+    right: 10%;
+    font-size: 8px;
+    top: 5%;
+}
+
+#poet_newwork,
+#listen_poetry {
+    height: 400px;
+    margin: 10px 0px;
+}
+
+
+#poet_newwork .hd,
+#listen_poetry .hd {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(220, 218, 218);
+}
+
+
+#poet_newwork.bd,
+#listen_poetry .bd {
+    height: 350px;
+    background-color: skyblue;
+}
+
+#poet_newwork .poet_introduction {
+    width: 30%;
+    height: 350px;
+    background-color: gray;
+    padding: 16px;
+}
+
+#poet_newwork .poet_introduction p {
+    -webkit-line-clamp: 8;
+    font-size: 18px;
+}
+
+#poet_newwork .newwork {
+    width: 45%;
+    height: 350px;
+    background-color: green;
+    padding: 16px;
+}
+
+#poet_newwork .newwork p {
+    -webkit-line-clamp: 9;
+    font-size: 18px;
+}
+
+#poet_newwork .bd img {
+    width: 25%;
+    height: 350px;
+}
+#listen_poetry .listen_info #listen_img{
+    width: 160px;
+    height: 160px;
+    transition: all 1.0s;
+}
+
+#listen_poetry .listen_info #listen_img:hover{
+    transform: rotate(-360deg);
+}
+
+#listen_poetry .bd .listen_info {
+    width: 50%;
+    height: 300px;
+    background-color: gray;
+}
+
+#listen_poetry .bd .listen_info {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#listen_poetry .bd .listen_list {
+    width: 50%;
+    background-color: green;
+}
+
+#listen_poetry .bd .listen_list li {
+    width: 90%;
+    height: 60px;
+    background-color: oldlace;
+}
+
+#listen_poetry .bd .listen_list img {
+    width: 64px;
+    height: 64px;
+}
+
+#famous_sentence #season,
+#patriotic,
+#miss {
+    height: 300px;
+    /* background-color: pink; */
+    border: 2px solid gray;
+}
+
+#famous_sentence #season {
+    background: url("https://tse4-mm.cn.bing.net/th/id/OIP-C.VqIZlcBRdARicqfnYEFz1gHaDs?w=295&h=174&c=7&r=0&o=5&dpr=1.9&pid=1.7") no-repeat;
+    background-size: 100% 100%;
+}
+
+#famous_sentence #patriotic {
+    background: url("https://tse1-mm.cn.bing.net/th/id/OIP-C.hu7AxzV98BlfVqm-tTZVAwHaEo?w=251&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7") no-repeat;
+    background-size: 100% 100%;
+}
+
+#famous_sentence #miss {
+    background: url("https://tse2-mm.cn.bing.net/th/id/OIP-C.S1eLb0spnKC4ICYUTAI3NQHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7") no-repeat;
+    background-size: 100% 100%;
+}
+
+#famous_sentence h6 {
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#famous_sentence li {
+    width: 100%;
+    height: 40px;
+    margin: 6px 0px;
+    /* background-color: yellow; */
+    background-color: rgba(190, 192, 196, 0.5);
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    overflow: hidden;
+}

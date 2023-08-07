@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        #pills-tab {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid blue;
+            border-radius: 20px;
+            justify-content: center;
+            padding: 1% 0px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+                0 2px 2px rgba(0, 0, 0, 0.1),
+                0 4px 4px rgba(0, 0, 0, 0.1),
+                0 8px 8px rgba(0, 0, 0, 0.1),
+                0 16px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        #pills-tab button {
+            font-size: 0.8rem;
+        }
+
+        #bg {
+            height: 150px;
+            background: url("./images/about_bg.png") repeat-x;
+            background-color: pink;
+        }
+
+        #main {
+            background-color: rgb(243, 239, 239);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="nav">
+            <div class="container-fluid mx-3 justify-content-between">
+                <a class="navbar-brand w-l" href="#" id="nav_logo">
+                    <img src="https://szlib.org.cn/media/images/logo.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="iconfont icon-zhedie">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end d-none d-sm-block" id="navbarSupportedContent">
+                    <ul class="navbar-nav px-2" id="nav_items">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./新闻资讯.html">新闻资讯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">资源导航</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./服务指南.html">服务指南</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./图书馆网.html">图书馆网</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./关于深图.html">关于深图</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex d-md-none" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- 背景 -->
+    <section>
+        <div class="container-fluid" id="bg"></div>
+    </section>
+    <!-- 位置 -->
+    <section>
+        <div class="container  mt-3">
+            <!-- 面包屑导航 -->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="bbreadcrumb-item">我的位置：</li>
+                    <li class="breadcrumb-item"><a href="./index.html"
+                            style="text-decoration: none; color: rgb(89, 92, 95);">首页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: blue;">
+                        <a href="./关于深图.html" style="text-decoration: none;">关于深图</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- 主体 -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mx-auto mt-3">关于深图
+                <hr>
+            </h2>
+            <div class="row" id="main">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="false">深图概况</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">参观深图</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">机构设置</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                                aria-selected="false">理事会</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled1" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="true">年度计划</button>
+                        </li>
+                        <!-- <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled2" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="false">工作年报</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled3" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="false">深图刊物</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled4" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="false">深图数据</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled5" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="false">深图章程</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled6" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="false">发展规划</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled7" type="button" role="tab"
+                                aria-controls="pills-disabled" aria-selected="false">财务公示</button>
+                        </li> -->
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-md-8 cl-sm-12 bg-light p-2">
+                                    <p>深圳图书馆前身为宝安县图书馆，1986年，作为深圳市“八大文化设施”之一建成开馆。2006年，中心区新馆落成开放，位于深圳市行政文化中心区风景秀美的莲花山前，占地2.96万平方米，总建筑面积4.96万平方米，馆藏总量逾千万册（件），在全市设有200多台24小时城市街区自助图书馆，若干个分馆、图书服务站与“青少年阅读基地”，年均接待到馆读者约450万人次，实体文献外借服务总量近500万册次，已建立起由实体馆、网站、微信、微博、电话语音系统等构成的多元化服务平台。荣获全国文明单位、全国社会科学普及教育基地、全民阅读示范基地、全国“敬老文明号”、广东省文明单位、广东省首批人文社科普及示范基地、广东省特色文化品牌、深圳市市长质量奖鼓励奖等各级各类荣誉。官方微博连续多年被评为年度“全国十大图书馆微博”。
+                                    </p>
+                                    <p> 秉承“服务立馆、技术强馆、文化新馆”的办馆理念，深圳图书馆在全国首倡开放、平等、免费服务，率先全面应用无线射频识别技术，自主研发图书馆自动化集成系统（ILAS），主导研制城市街区24小时自助图书馆，承担国家文化创新工程、国家文化科技提升计划等重大项目。创设南书房、讲读厅、创客空间、捐赠换书中心、深圳学派文献专区、全媒体工作室等十余个新型文化空间，参与举办“市民文化大讲堂”，策划打造“南书房家庭经典阅读书目推荐推广”“深圳学人·南书房夜话”“4·23共读半小时”“阅在深秋·公共读书活动”“人文讲坛”“从文献看湾区”等颇具特色和广泛影响力的阅读品牌，年举办各类阅读推广活动近2000场次。2013年，联合国教科文组织授予深圳“全球全民阅读典范城市”称号，充分肯定了深圳地区图书馆及社会各界力量在推动全民阅读方面取得的成果。
+                                    </p>
+                                    <p>2023年，深圳图书馆北馆将建成开放，总建筑面积达7.2万平方米，设计藏书量800万册，承担起“一馆一库三中心”功能，即城市公共图书馆、全市文献调剂书库以及深圳“图书馆之城”联合采编中心、网络数据中心和文献调配中心。部署面向全场景的第五代“图书馆之城”中心管理系统（ULAS-V），建设协同工作的智能立体书库和全自动分拣系统，创设深圳文学馆、深圳学人书房等十余个特色馆中馆和交互式学习空间，将实现与深圳图书馆中心馆的功能衔接、整合，打造集文献收藏、全民阅读、社会教育、思想交流、文化传承与创意创造于一体的大型综合性、智慧型图书馆。
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseOne">
+                                                    深圳图书情报学会
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne"
+                                                class="accordion-collapse collapse show"
+                                                aria-labelledby="panelsStayOpen-headingOne">
+                                                <div class="accordion-body">
+                                                    深圳图书情报学会是深圳市的一家专业学术组织，旨在推动图书情报学领域的研究、交流与发展。一群对图书情报学科充满热情的专家、学者和相关从业人员共同发起。
+                                                    学会的主要目标是为图书情报学领域的研究人员和从业者提供一个交流合作的平台，促进学科的发展和创新。通过举办学术研讨会、论坛、培训班等活动，学会致力于推动图书情报学领域的理论研究和实践应用，促进学术成果的传播和交流。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseTwo">
+                                                    中国图书馆学会
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="panelsStayOpen-headingTwo">
+                                                <div class="accordion-body">
+                                                    中国图书馆学会成立于1958年，是中国图书馆事业领域的全国性学术组织。学会汇集了广大图书馆工作者、图书情报学者、研究人员以及对图书馆事业感兴趣的个人和机构，旨在促进图书馆学科的研究、交流与发展，推进我国图书馆事业的现代化和智能化进程。
+                                                    学会的宗旨是：加强图书馆学科的研究与教育，提升图书馆事业的服务水平与质量，推动图书馆信息资源与知识管理的创新与发展。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseThree">
+                                                    公共图书馆研究院
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="panelsStayOpen-headingThree">
+                                                <div class="accordion-body">
+                                                    公共图书馆研究院是一个致力于公共图书馆研究和发展的独立机构。该研究院的主要任务是推进公共图书馆事业的发展与创新，提供相关研究、培训和咨询服务，为公共图书馆及其从业人员提供支持。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4"
+                                                    aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+                                                    《公共图书馆》杂志
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse"
+                                                aria-labelledby="panelsStayOpen-heading4">
+                                                <div class="accordion-body">
+                                                    《公共图书馆》杂志是一本国际性的学术期刊，主要关注公共图书馆事业和公共图书馆学科领域的发展和创新。该杂志旨在促进公共图书馆的研究、实践和知识分享，为公共图书馆从业人员和研究者提供一个交流与学习的平台。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5"
+                                                    aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+                                                    地方版联合采编协作网
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse"
+                                                aria-labelledby="panelsStayOpen-heading5">
+                                                <div class="accordion-body">
+                                                    地方版联合采编协作网指的是一个地方媒体之间进行联合采编和协作的平台或网络。这种形式的合作旨在加强地方新闻报道的质量和覆盖范围，提供更全面、多样化的信息给读者。
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="carouselExampleControlsNoTouching" class="carousel slide"
+                                        data-bs-touch="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/about (5).jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>深圳图书馆</h5>
+                                                    <p>新馆建筑由世界著名的日本建筑师矶崎新先生主持设计，和音乐厅一道构成深圳文化中心。寓意文化森林的图书馆正门“银树”和音乐厅正门“黄金树”象征中心区文化城的“城门”。图书馆南侧的三栋黑色放射性建筑状若三本翻开的图书，而东面柔美变化的水幕和三维玻璃曲面犹如委婉韵律的竖琴，从莲花山鸟瞰，阳光下熠熠生辉，可谓刚柔并济，煌煌大观。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/about (4).jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>深圳图书馆</h5>
+                                                    <p>新馆建筑由世界著名的日本建筑师矶崎新先生主持设计，和音乐厅一道构成深圳文化中心。寓意文化森林的图书馆正门“银树”和音乐厅正门“黄金树”象征中心区文化城的“城门”。图书馆南侧的三栋黑色放射性建筑状若三本翻开的图书，而东面柔美变化的水幕和三维玻璃曲面犹如委婉韵律的竖琴，从莲花山鸟瞰，阳光下熠熠生辉，可谓刚柔并济，煌煌大观。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/about (3).jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>深圳图书馆</h5>
+                                                    <p>新馆建筑由世界著名的日本建筑师矶崎新先生主持设计，和音乐厅一道构成深圳文化中心。寓意文化森林的图书馆正门“银树”和音乐厅正门“黄金树”象征中心区文化城的“城门”。图书馆南侧的三栋黑色放射性建筑状若三本翻开的图书，而东面柔美变化的水幕和三维玻璃曲面犹如委婉韵律的竖琴，从莲花山鸟瞰，阳光下熠熠生辉，可谓刚柔并济，煌煌大观。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/about (2).jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>深圳图书馆</h5>
+                                                    <p>新馆建筑由世界著名的日本建筑师矶崎新先生主持设计，和音乐厅一道构成深圳文化中心。寓意文化森林的图书馆正门“银树”和音乐厅正门“黄金树”象征中心区文化城的“城门”。图书馆南侧的三栋黑色放射性建筑状若三本翻开的图书，而东面柔美变化的水幕和三维玻璃曲面犹如委婉韵律的竖琴，从莲花山鸟瞰，阳光下熠熠生辉，可谓刚柔并济，煌煌大观。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/about (1).jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>深圳图书馆</h5>
+                                                    <p>新馆建筑由世界著名的日本建筑师矶崎新先生主持设计，和音乐厅一道构成深圳文化中心。寓意文化森林的图书馆正门“银树”和音乐厅正门“黄金树”象征中心区文化城的“城门”。图书馆南侧的三栋黑色放射性建筑状若三本翻开的图书，而东面柔美变化的水幕和三维玻璃曲面犹如委婉韵律的竖琴，从莲花山鸟瞰，阳光下熠熠生辉，可谓刚柔并济，煌煌大观。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">
+                            <img src="https://szlib.org.cn/UserFiles/editor/1479345796939.png" class="img-fluid">
+                        </div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12 bg-light p-2">
+                                    <div data-bs-spy="scroll" data-bs-target="#list-example"
+                                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                                        <h4 id="list-item-1">简介</h4>
+                                        <p> 深圳市于2007 年10
+                                            月发布《建立和完善事业单位法人治理结构实施意见》，在事业单位中建立和完善法人治理结构，深化事业单位组织机构和管理体制改革，推动政府职能转变，满足社会公众日益增长的公共服务需求。深圳图书馆作为公共文化服务机构被深圳市编办列为首批试点单位，开展建立和完善事业单位法人治理结构试点工作，之后又被列为中央编办与深圳市共抓的试点单位。
+                                        </p>
+                                        <h4 id="list-item-2">大事件</h4>
+                                        <p> 2007 年12
+                                            月，成立法人治理结构改革筹备组。作为深圳乃至全国最早试点法人治理结构改革的公共文化单位，国内没有现成的案例或经验可供参考借鉴，深圳图书馆因此进行了较长时间的探索。
+
+                                            2008
+                                            年，草拟了《深圳图书馆理事会章程》《深圳图书馆理事会决策失误追究制度》《深圳图书馆审计与绩效评估制度》《深圳图书馆年度报告制度》《深圳图书馆信息公开制度》四个配套制度草案。
+
+                                            2009 年7
+                                            月，理事会章程及四个配套制度草案获深圳市事业单位体制改革领导小组办公室批复。按照批复的章程，深圳图书馆理事会“是深圳图书馆的议事和决策机构，负责确定深圳图书馆的发展战略和发展规划，行使深圳图书馆重大事项议事权和决策权”。理事会对深圳市文体旅游局负责。
+
+                                            2010 年12 月29
+                                            日，市文体旅游局举行深圳图书馆理事会揭牌仪式，向获聘首届理事颁发聘书。仪式结束后，理事会召开第一次会议，审议通过了理事会章程及四个配套制度。2012
+                                            年9 月，深圳图书馆被中央宣传部、文化部、国家广电总局、新闻出版总署评为“全国文化体制改革工作先进单位”。</p>
+                                        <h4 id="list-item-3">第一届理事会成员名单</h4>
+                                        <p> 理事长：陈新亮（2010 年12 月—2012 年3 月）；柴凤春（2012 年3 月—2013 年12 月）；杨永群（2013 年12
+                                            月起任）
+                                            理事：姚峰、景海峰、郭祥焰、张克科、程亚男、伍宪、胡胜文、聂昌友、甘琳（2012 年3 月卸任）、张岩（2012 年3 月起任）、王冰
+                                            秘书：肖容梅</p>
+                                        <h4 id="list-item-4"> 第二届理事会成员名单</h4>
+                                        <p>理事长：杨永群
+                                            理事：景海峰、张克科、程亚男、胡胜文、衷敬高、邓康延、窦瑞刚、聂昌友、张岩、王冰
+                                            秘书：肖容梅（2016 年3 月卸任）、王冬阳（2016 年3 月起任）</p>
+                                        <h4 id="list-item-5"> 第三届理事会成员名单</h4>
+                                        <p> 理事长：张杰
+                                            理事：程亚男、胡胜文、衷敬高、邓康延、窦瑞刚、邓一光、姜华、聂昌友、张岩、温雪芳
+                                            秘书：王冬阳</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-none d-sm-block">
+                                    <div id="list-example" class="list-group">
+                                        <a class="list-group-item list-group-item-action" href="#list-item-1">简介</a>
+                                        <a class="list-group-item list-group-item-action" href="#list-item-2">大事件</a>
+                                        <a class="list-group-item list-group-item-action"
+                                            href="#list-item-3">第一届理事会成员名单</a>
+                                        <a class="list-group-item list-group-item-action"
+                                            href="#list-item-4">第二届理事会成员名单</a>
+                                        <a class="list-group-item list-group-item-action"
+                                            href="#list-item-5">第二届理事会成员名单</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-disabled1" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <div
+                                class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-lg-start text-md-center text-sm-center">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">深圳图书馆2023年工作要点</h5>
+                                            <p class="card-text">
+                                                2023年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证
+                                            </p>
+                                            <a href="#" class="btn btn-primary">下载pdf</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">深圳图书馆2022年工作要点</h5>
+                                            <p class="card-text">
+                                                2022年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证
+                                            </p>
+                                            <a href="#" class="btn btn-primary">下载pdf</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">深圳图书馆2021年工作要点</h5>
+                                            <p class="card-text">
+                                                2021年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证
+                                            </p>
+                                            <a href="#" class="btn btn-primary">下载pdf</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">深圳图书馆2020年工作要点</h5>
+                                            <p class="card-text">
+                                                2020年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证
+                                            </p>
+                                            <a href="#" class="btn btn-primary">下载pdf</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">深圳图书馆2019年工作要点</h5>
+                                            <p class="card-text">
+                                                2019年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证
+                                            </p>
+                                            <a href="#" class="btn btn-primary">下载pdf</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">深圳图书馆2018年工作要点</h5>
+                                            <p class="card-text">
+                                                2018年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证
+                                            </p>
+                                            <a href="#" class="btn btn-primary">下载pdf</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-disabled2" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">工作年报</div>
+                        <div class="tab-pane fade" id="pills-disabled3" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">深图刊物</div>
+                        <div class="tab-pane fade" id="pills-disabled4" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">深图数据</div>
+                        <div class="tab-pane fade" id="pills-disabled5" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">深图章程</div>
+                        <div class="tab-pane fade" id="pills-disabled6" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">发展规划</div>
+                        <div class="tab-pane fade" id="pills-disabled7" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">财务公示</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <section>
+        <footer class="bg-dark text-white pt-3 mt-5" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">相关服务</h5>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">城市街区自助图书馆</a></li>
+                                    <li><a href="#">少儿服务</a></li>
+                                    <li><a href="#">预借服务</a></li>
+                                    <li><a href="#">文献转借服务</a></li>
+                                    <li><a href="#">新书直通车服务</a></li>
+                                    <li><a href="#">移动服务</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">短信服务</a></li>
+                                    <li><a href="#">文献传递</a></li>
+                                    <li><a href="#">定题服务</a></li>
+                                    <li><a href="#">深圳捐赠换书中心(芳名录)</a></li>
+                                    <li><a href="#">数字资源馆外访问</a></li>
+                                    <li><a href="#">馆外调阅服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">常用网站</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">中国图书馆学会</a></li>
+                            <li><a href="#">广东图书馆学会</a></li>
+                            <li><a href="#">深圳图生情报学会</a></li>
+                            <li><a href="#">地方版文献联合采编协作网</a></li>
+                            <li><a href="#">ILAS图书馆管理系统</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-12 d-none d-sm-block">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="./images/footer-icon-wb.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-icon-wx.png" alt="" class="img-fluid">
+                                <p>微信</p>
+                            </div>
+                        </div>
+                        <div class="row text-center mt-2">
+                            <div class="col">
+                                <img src="./images/footer-icon-dy.png" alt="" class="img-fluid">
+                                <p>抖音</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-bszs.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p>&copy; 深圳图书馆-刘佳乐</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#myCarousel')
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 2000,
+            touch: false
+        })
+    </script>
+</body>
+
+</html>

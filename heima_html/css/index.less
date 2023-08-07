@@ -1,0 +1,204 @@
+@bgcolor: #FFFFFF;
+@bgcolor-text: #3333;
+
+
+
+/* .div{
+    width: 2.7027rem;
+    height: 2.7027rem;
+    background-color: pink;
+} */
+
+// 移动端 px-》rem
+.wrap {
+    background-color: @bgcolor;
+    padding-bottom: 1.1466667rem;
+}
+
+header {
+    height: 2.1622rem;
+    border-bottom: 1px solid rgb(192, 190, 190);
+    text-align: center;
+    line-height: 2.1622rem;
+    font-size: 0.933333rem;
+    color: #1c1c1c;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap; //换行
+    padding: 1.2rem 0 1.6rem 0;
+
+    .item {
+        width: 33.33%;
+        //纵向显示
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        // background-color: pink;
+        img {
+            width: 3.706667rem;
+            height: 3.706667rem;
+            margin: 0 auto;
+        }
+
+        span {
+            font-size: 0.6667rem;
+            color: #707070;
+        }
+    }
+
+    //选择前三个 -n
+    .item:nth-child(-n+3) {
+        margin-bottom: 1.453333rem;
+    }
+}
+
+.go {
+    margin: 0 0.266667rem 0 0.48rem;
+}
+
+.content {
+    padding: 1.066667rem 0.62rem;
+    margin-top: 0.266667rem;
+    background-color: @bgcolor;
+
+    .hd {
+        display: flex;
+        height: 1.027rem;
+        // 两侧对其，又间距
+        justify-content: space-between;
+        line-height: 1.027rem;
+
+        h4 {
+            font-size: 0.746667rem;
+            color: #333333;
+
+            .icon {
+                display: inline-block;
+                width: 1.027rem;
+                width: 1.027rem;
+                // 图片和文字的基线对齐
+                vertical-align: middle;
+                margin-right: 0.2703rem;
+            }
+        }
+
+        .more {
+            font-size: 0.5867rem;
+            color: #999999;
+        }
+    }
+
+    .bd_carousel {
+        position: relative;
+
+        .swiper-container {
+            // width: 100%;
+            height: 100%;
+            // 根据需求把宽度定位 540px
+            width: 14.4rem;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            // 竖向显示  默认为横向显示
+            flex-direction: column;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            // 其余的兄弟是 0.8
+            transform: scale(0.8);
+            opacity: 0.4;
+
+            a {
+                width: 9.013333rem;
+                height: 10.026667rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                width: 9.013333rem;
+                font-size: 0.666667rem;
+                margin-top: 0.64rem;
+                color: #333;
+            }
+        }
+
+        // 当前选中的 slide   中间那个
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1);
+            z-index: 999;
+            opacity: 1;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            outline: none;
+
+            &:after {
+                font-size: 1.066667rem;
+                color: #333;
+            }
+        }
+    }
+}
+
+.study_con {
+    .study {
+        position: relative;
+        overflow: hidden;
+        margin-top: 1.2595rem;
+        margin-bottom: 2.6595rem;
+        .swiper-slide {
+            width: 8.0835rem;
+            height: 8.86667rem;
+            border-radius: 0.266667rem;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+
+            p {
+                font-size: 0.693333rem;
+                margin: 0.513333rem 0;
+                font-weight: 400;
+                padding: 0 0.266667rem;
+            }
+
+            span {
+                font-size: 0.693333rem;
+                color: #ff4400;
+                padding: 0 0.266667rem;
+            }
+        }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+}

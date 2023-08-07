@@ -1,0 +1,62 @@
+/* 约束当屏幕大于750px的时候，html的字体不变化 */
+@media screen and (min-width:750px) {
+
+    /* !important进行约束 */
+    html {
+        font-size: 37px !important;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    max-height: 32.4324rem;
+    background-color: #F2F4F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 750px;
+    width: 100%;
+    height: 2.9333rem;
+    background-color: pink;
+    display: flex;
+    z-index: 99999;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 0.533333rem;
+    box-sizing: border-box;
+}
+
+footer a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a img {
+    width: 1.04rem;
+    height: 1.093333rem;
+}
+
+footer a p {
+    font-size: 0.586667rem;
+    color: #666666;
+    margin-top: 0.266667rem;
+}

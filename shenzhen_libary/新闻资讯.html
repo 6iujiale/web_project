@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <style>
+        #paging_nav .page-item {
+            margin-right: 2%;
+            border-radius: 50%;
+        }
+
+        #paging_nav .page-item a:hover {
+            background-color: #5876E2;
+            color: white;
+        }
+
+        li.list-group-item div:nth-child(2) {
+            font-size: 0.8rem;
+            color: rgb(81, 79, 79);
+        }
+
+        li.list-group-item .badge {
+            width: 100px;
+            font-size: 0.4rem;
+            padding: 0.4% 0px;
+            text-align: center;
+        }
+        @media only screen and (min-width: 320px) and (max-width: 450px) {
+            #nav-tab button{
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="nav">
+            <div class="container-fluid mx-3 justify-content-between">
+                <a class="navbar-brand w-l" href="#" id="nav_logo">
+                    <img src="https://szlib.org.cn/media/images/logo.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav px-2" id="nav_items">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./新闻资讯.html">新闻资讯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">资源导航</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./服务指南.html">服务指南</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./图书馆网.html">图书馆网</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./关于深图.html">关于深图</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex d-md-none" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- 位置 -->
+    <section>
+        <div class="container  mt-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="bbreadcrumb-item">我的位置：</li>
+                    <li class="breadcrumb-item"><a href="./index.html"
+                            style="text-decoration: none; color: rgb(89, 92, 95);">首页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: blue;">
+                        <a href="./新闻资讯.html" style="text-decoration: none;">新闻咨询</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- 主体 -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mx-auto mt-3">新闻咨询
+                <hr>
+            </h2>
+            <div class="row" id="main">
+                <div class="col-12">
+                    <nav style="background-color: #F5F5F5;">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">通知公告</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">媒体报道</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">业界动态</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- 通知公告 -->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳图书馆2023年端午节开放时间和服务范围公告</div>
+                                        <div>了解深圳图书馆端午节的开放时间和服务范围</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-6-16</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">2023“南书房家庭经典阅读书目”征文比赛公告</div>
+                                        <div>参与“南书房家庭经典阅读书目”征文比赛的信息公告</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-6-12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">第二届“全民阅读，携手共进”城市街区自助图书馆优秀托管单位及联络人评选活动公告</div>
+                                        <div>关于评选优秀托管单位和联络人的城市街区自助图书馆活动公告</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-26</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">书香润心灵 运动健体魄” ——“4•23世界读书日”全民“阅读+健身”活动获奖名单公告</div>
+                                        <div>公布“4·23世界读书日”全民“阅读+健身”活动获奖名单的公告</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-25</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">城市街区自助图书馆”预备服务点征集令</div>
+                                        <div>征集“城市街区自助图书馆”预备服务点的公告</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-27</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">2023年4·23世界读书日“阅读好滋味”创作比赛（社会组）结果公告</div>
+                                        <div>公布2023年4·23世界读书日“阅读好滋味”创作比赛（社会组）结果的公告</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-25</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳图书馆2023年劳动节开放时间和服务范围公告</div>
+                                        <div>了解深圳图书馆劳动节的开放时间和服务范围</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-23</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">2023“南书房家庭经典阅读书目”发布</div>
+                                        <div>介绍2023年“南书房家庭经典阅读书目”的发布情况</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-23</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳图书馆2023年清明节开放时间和服务范围公告</div>
+                                        <div>了解深圳图书馆清明节的开放时间和服务范围</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-3</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳文献·深圳人著作目录（经济卷）</div>
+                                        <div>深圳人在经济领域的著作目录发布</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-15</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">书身"颜如玉" 来看书籍装帧设计展</div>
+                                        <div>展览探索书籍装帧设计的艺术之美</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-10</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">《2023年深圳图书馆数字阅读报告》发布</div>
+                                        <div>数字阅读趋势及数据分析报告发布</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-10</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳，一座拥有阅读基因的城市</div>
+                                        <div>探索深圳作为阅读城市的特质和魅力</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-26</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">迎接第28个世界读书日 深圳千余场活动点燃“悦”读好时光</div>
+                                        <div>深圳举办丰富多彩的活动庆祝世界读书日</div>
+                                    </div>
+                                    <span class="badge bg-primary">023-4-25</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳图书馆“家庭诵经典·书香伴成长”首届家庭经典阅读朗诵大赛圆满落幕</div>
+                                        <div>家庭经典阅读朗诵大赛在深圳图书馆成功结束</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-20</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">《读者》杂志插图艺术作品在深图展出</div>
+                                        <div>深圳图书馆举办《读者》杂志插图艺术作品展览</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-20</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">市民文化大讲堂来了</div>
+                                        <div>深圳推出市民文化大讲堂活动，打造知识分享平台</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-20</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">全国首家金融特色市级图书馆分馆在深开馆</div>
+                                        <div>全国首个金融特色市级图书馆分馆在深圆满开馆</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-4-213</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                            tabindex="0">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">浙江图书馆微信公众号</div>
+                                        <div>要健康，不要创伤：图书馆的心理健康咨询服务</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-6-21</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">《羊城晚报》</div>
+                                        <div>“15分钟阅读圈”：点亮高品质文化供给的“广东智慧”</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-6-21</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">e线图情</div>
+                                        <div>加拿大研究型图书馆发布《加拿大开放教育资源国家倡议框架》</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-6-5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">《潇湘晨报》</div>
+                                        <div>教育部启动“全民阅读标准建设工程”，三年完成中文分级阅读标准建设</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-6-5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">浙江图书馆微信公众号</div>
+                                        <div>国际图联倡导图书馆积极参与互联网普遍性ROAM-X指标实施工作</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-30</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">《新民晚报》</div>
+                                        <div>上海图书馆vs宝可梦上海公司：互动阅读让开卷更有“梦”</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-30</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">e线图情</div>
+                                        <div>芬兰国家图书馆发布第一份碳足迹报告</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-24</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">中国新闻网</div>
+                                        <div>财政部下达多笔资金支持各地公共文化服务</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-24</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">深圳大学图书馆订阅号</div>
+                                        <div>美国图书馆协会发布《2023年美国图书馆状况报告》</div>
+                                    </div>
+                                    <span class="badge bg-primary">2023-5-17</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 分页 -->
+            <div class="row mt-3" id="paging_nav"
+                style="display: flex;justify-content: space-between;align-items: center;">
+                <div class="col-md-12 col-sm-12 col-lg-7">
+                    <div class="pagination d-flex">
+                        <div class="input-group flex-grow-1">
+                            <input type="text" class="form-control" placeholder="搜索更多咨询">
+                            <button class="btn btn-primary">搜索</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-5 pt-sm-2">
+                    <nav aria-label="Page navigation example d-flex">
+                        <ul class="pagination d-flex justify-content-center">
+                            <li class="page-item"><a class="page-link" href="">1</a></li>
+                            <li class="page-item"><a class="page-link" href="">2</a></li>
+                            <li class="page-item"><a class="page-link" href="">3</a></li>
+                            <li class="page-item"><a class="page-link" href="">4</a></li>
+                            <li class="page-item"><a class="page-link" href="">5</a></li>
+                            <li class="page-item"><a class="page-link" href="" id="page">下一页</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <section>
+        <footer class="bg-dark text-white pt-3 mt-5" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">相关服务</h5>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">城市街区自助图书馆</a></li>
+                                    <li><a href="#">少儿服务</a></li>
+                                    <li><a href="#">预借服务</a></li>
+                                    <li><a href="#">文献转借服务</a></li>
+                                    <li><a href="#">新书直通车服务</a></li>
+                                    <li><a href="#">移动服务</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">短信服务</a></li>
+                                    <li><a href="#">文献传递</a></li>
+                                    <li><a href="#">定题服务</a></li>
+                                    <li><a href="#">深圳捐赠换书中心(芳名录)</a></li>
+                                    <li><a href="#">数字资源馆外访问</a></li>
+                                    <li><a href="#">馆外调阅服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">常用网站</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">中国图书馆学会</a></li>
+                            <li><a href="#">广东图书馆学会</a></li>
+                            <li><a href="#">深圳图生情报学会</a></li>
+                            <li><a href="#">地方版文献联合采编协作网</a></li>
+                            <li><a href="#">ILAS图书馆管理系统</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-12 d-none d-sm-block">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="./images/footer-icon-wb.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-icon-wx.png" alt="" class="img-fluid">
+                                <p>微信</p>
+                            </div>
+                        </div>
+                        <div class="row text-center mt-2">
+                            <div class="col">
+                                <img src="./images/footer-icon-dy.png" alt="" class="img-fluid">
+                                <p>抖音</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-bszs.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p>&copy; 深圳图书馆-刘佳乐</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

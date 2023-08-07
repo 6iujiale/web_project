@@ -1,0 +1,297 @@
+.main{
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+    margin-right: 170px;
+}
+
+.main .focus{
+    width: 722px;
+    height: 100%;
+}
+
+.main .Newsflash{
+    width: 250px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #dfdfdf;
+}
+
+.main .Newsflash .news{
+    width: 100%;
+    height: 165px;
+    border-bottom: 1px solid #dfdfdf;
+    position: relative;
+}
+
+.main .Newsflash .news-hd{
+    height: 32px;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+
+.main .Newsflash  .news-bd li{
+    padding: 4px 16px;
+}
+
+.main .Newsflash .lifeservice{
+    width: 100%;
+    height: 209px;
+    /* border: 1px solid #dfdfdf; */
+    border-top: 0;
+}
+
+.main .Newsflash .lifeservice li{
+    width: 62px;
+    height: 72px;
+    float: left;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.main .Newsflash .lifeservice li i{
+    width: 21px;
+    height: 25px;
+    display: block;
+    margin: 11px auto;
+    background-color: pink;
+    background: url('../upload/icons.png') no-repeat -19px -15px;
+}
+
+.main .Newsflash .lifeservice li p{
+    text-align: center;
+}
+
+.recom{
+    height: 163px;
+    background-color: pink;
+    margin-top: 12px;
+}
+
+.recom .recom-hd{
+    width: 206px;
+    height: 100%;
+    background-color: #5C5251;
+    background-image: url('../images/tuijian.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.recom .recom-bd{
+    width: 994px;
+    height: 100%;  
+    background-color: #EBEBEB; 
+}
+
+.recom .recom-bd li{
+    float: left;
+    width: 248px;
+    height: 164px;
+    border-right: 1px solid #ccc;
+}
+
+.recom .recom-bd li img{
+    /* li宽度包括border面积,所以img宽度需-1 */
+    width: 247px;
+    height: 100%;
+}
+
+.mod-like{
+    height: 262px;
+    margin-top: 28px;
+}
+
+.mod-like .like-hd{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+}
+
+.mod-like .like-hd h3 a{
+    width: 22px;
+    height: 15px;
+    display: block;
+    float: right;
+    background-image: url('../upload/icons.png');
+    background-repeat: no-repeat;
+    background-position:  -415px -110px;
+    margin-top: 10px;
+}
+
+.mod-like .like-bd{
+    width: 100%;
+    height: 224px;
+    background-color: #FFFFFF;
+}
+
+.mod-like .like-bd li{
+    width: 200px;
+    height: 224px;
+    float: left;
+    border: 1px solid #EDEDED;
+    position: relative;
+    text-align: center;
+}
+
+.mod-like .like-bd li img{
+    margin-top: 14px;
+    vertical-align: middle;
+}
+
+.mod-like .like-bd .like-text{
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    bottom: 10px;
+    text-align: left;
+    padding-left: 33px;
+}
+
+.mod-like .like-bd .like-text span{
+    color: #DF3033;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: '黑体';
+}
+
+.interest-area{
+    height: 435px;
+    margin-top: 25px;
+}
+
+.interest-area .interest-hd{
+    width: 100%;
+    height: 30px;
+}
+
+.interest-area .interest-bd{
+    width: 100%;
+    height: 405px;
+}
+
+.interest-area .interest-bd .good-book{
+    width: 405px;
+    height: 100%;
+    background-color: #B8BDDD;
+    background-image: url('../upload/yq\(1\).png');
+    background-repeat: no-repeat;
+    background-position: 128px 112px;
+    
+}
+
+.interest-area .interest-bd .good-book .book-text{
+    font-size: 19px;
+    margin: 24px;
+    color: #3B468D;
+}
+
+.interest-area .interest-bd .good-thinks{
+    width: 226px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA ;
+}
+
+.interest-area .interest-bd .title{
+    width: 100%;
+    height:38px;
+    border-bottom: 1px solid #EEEEEE;
+    text-align: center;
+    line-height: 38px;
+    background-color: #FFFFFF;
+    color: rgb(14, 14, 14);
+}
+
+.interest-area .interest-bd .good-thinks .good1,.good3{
+    height: 203px;
+    width: 100%;
+    display: inline-block;
+    padding-top: 55px;
+}
+
+.interest-area .interest-bd .good-thinks .good2,.good4,.good5{
+    width: 100%;
+    height: 160px;
+    display: inline-block;
+    border-top: 1px solid #EEEEEE;
+    background-color: pink;
+    padding-left: 10px;
+}
+
+.interest-area .interest-bd .brand-street{
+    width: 408px;
+    height: 405px;
+    background-color: #F7F7F7;
+    border: 1px solid #EEEEEE;
+}
+
+.interest-area .interest-bd .trademark{
+    background: url('../upload/商标.png') no-repeat right;
+    height: 100%;
+    width: 161px;
+    display: inline-block;
+}
+
+.jiadian .box-hd{
+    height: 30px; 
+    border-bottom: 2px solid #CB1524;
+    margin-top: 35px;
+}
+
+.jiadian .box-hd h3{
+    font-size: 18px;
+    color:#B5130E;
+    font-weight: 400;
+}
+
+.jiadian .box-hd .tab-list li{
+    color: #676767;
+    float: left;
+    line-height: 30px;
+}
+
+.jiadian .box-hd .tab-list li a{
+    margin: 0 10px;
+}
+
+.jiadian .box-bd{
+    height: 360px;
+}
+
+.jiadian .box-bd .tab-content .tab-content-item1{
+    width: 208px;
+    height: 360px;
+}
+
+.jiadian .box-bd .tab-content .tab-content-item1 a{
+    width: 80px;
+    height: 33px;
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.jiadian .box-bd .tab-content-item2{
+    width: 328px;
+    height: 360px;
+    background-color: yellow;
+}
+
+.jiadian .box-bd .tab-content-item3{
+    width: 220px;
+    /* height: 360px; */
+    border: 1px solid #EDEDED;
+}
+
+.jiadian .box-bd .tab-content-item4{
+    width: 218px;
+}
+
+.floor-brand{
+    margin-top: 18px;
+}
+ 

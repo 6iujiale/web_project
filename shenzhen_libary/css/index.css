@@ -1,0 +1,343 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+    #notice .card-body {
+        font-size: 0.6rem;
+    }
+
+    #notice .card-body span {
+        font-size: 0.2rem;
+    }
+
+    #activity .col-lg-6 {
+        height: 50%;
+    }
+    .nav-pills .nav-link {
+        width: 140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #venue_layout .card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 503px) {
+    .col #end_box button {
+        font-size: 0.5rem;
+    }
+
+    .col #end_box .card-text {
+        font-size: 1rem;
+        padding-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+    .col #end_box button {
+        font-size: 0.2rem;
+    }
+
+    .col #end_box .card-text {
+        font-size: 0.7rem;
+        padding-bottom: 10%;
+    }
+
+    #activity .box {
+        border: none;
+    }
+
+    #myTabContent .card .card-body a {
+        font-size: 0.7rem;
+    }
+
+    #venue_layout .card {
+        width: 0;
+    }
+
+    .nav-pills .nav-link {
+        width: 60px;
+    }
+    #resource .col-lg-10{
+        width: 100%;
+    }
+    #myTab button{
+        font-size: 0.85rem;
+    }
+    #v-pills-tabContent .col:nth-child(n+2){
+        margin: 0;
+    }
+}
+
+
+/* 通知公告 */
+#notice {
+    position: relative;
+}
+
+#notice .card-body {
+    font-size: 0.8rem;
+    height: 120px;
+    background-color: pink;
+}
+
+#notice .card-body .item a {
+    text-decoration: none;
+}
+
+#notice .card-body .item {
+    height: 20%;
+    margin: 3% 0px;
+    border-bottom: 1px solid rgb(211, 208, 208);
+}
+
+#noticed span {
+    position: absolute;
+    bottom: 4%;
+    font-size: 0.4rem;
+}
+
+#notice .card-body button {
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+    font-size: 0.5rem;
+}
+
+/* 数字资源 */
+#resource a {
+    font-size: 0.8rem;
+}
+
+#resource .card-body {
+    padding: 2% 0;
+}
+
+/* #resource .col{
+    padding-left: 0;
+    padding-right: 0;
+} */
+#resource img {
+    width: 80px;
+    height: 80px;
+    margin: 5% auto;
+}
+
+/* 场馆布局 */
+#venue_layout .card {
+    position: relative;
+    width: 240px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #f5f5f5;
+    /* 阴影 */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+        0 2px 2px rgba(0, 0, 0, 0.1),
+        0 4px 4px rgba(0, 0, 0, 0.1),
+        0 8px 8px rgba(0, 0, 0, 0.1),
+        0 16px 16px rgba(0, 0, 0, 0.1);
+    /* 溢出隐藏 */
+    overflow: hidden;
+    background: url("../images/venue_layout_bg.jpg") no-repeat;
+    background-position: 50% top;
+}
+
+#venue_layout .card::before {
+    content: "";
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: url(/images/139/1.jpg); */
+    background-size: cover;
+    background-position: 0 0;
+    /* 过渡效果: css属性名 时长 贝塞尔曲线 */
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* 遮罩 */
+#venue_layout .card::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.25) 55%,
+            rgba(0, 0, 0, 0.8) 100%);
+    /* 绝对定位 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    /* 过渡效果 */
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#venue_layout .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 16px 8px;
+    transform: translateY(76%);
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    height: 100%;
+}
+
+#venue_layout .card h2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#venue_layout .card p {
+    font-size: 15px;
+    /* 字间距 */
+    letter-spacing: 2px;
+    width: 80%;
+    line-height: 30px;
+    margin-top: 25px;
+    /* 文本两端对齐 */
+    text-align: justify;
+}
+
+#venue_layout .card button {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#venue_layout .card button:hover {
+    background-color: #000;
+}
+
+#venue_layout .card .content *:not(h2) {
+    /* .content下，除了h2，其他元素隐藏并下移20px */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#venue_layout .card:hover {
+    align-items: center;
+}
+
+#venue_layout .card:hover::before {
+    transform: translateY(-5%);
+}
+
+#venue_layout .card:hover::after {
+    transform: translateY(-50%);
+}
+
+#venue_layout .card:hover .content {
+    transform: translateY(0);
+}
+
+#venue_layout .card:hover .content *:not(h2) {
+    opacity: 1;
+    transform: translateY(0);
+    /* 过渡效果延迟 */
+    transition-delay: 0.1s;
+}
+
+/* 活动展览 */
+#activity {
+    height: 360px;
+}
+
+#activity .box {
+    flex: 1;
+    overflow: hidden;
+    transition: 1s;
+    margin: 0 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+
+}
+
+#activity .box>img {
+    width: 96%;
+    height: 85%;
+    object-fit: cover;
+    transition: .9s;
+    margin: 0 auto;
+}
+
+#activity .box>span {
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 侧边栏 */
+#right-fixed-menu {
+    position: fixed;
+    right: 1%;
+    top: 40%;
+    border: 2px solid black;
+    border-radius: 30px;
+    /* display: none; */
+}
+
+#right-fixed-menu img {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+#right-fixed-menu button {
+    border: 0px;
+    border-radius: 0px;
+}
+
+#right-fixed-menu button:hover {
+    border: 0px;
+    border-radius: 0px;
+}
+
+#right-fixed-menu button:active {
+    border: 0px;
+    border-radius: 0px;
+}
+
+#right-fixed-menu button:link {
+    border: 0px;
+    border-radius: 0px;
+}
+
+/* 通知公告 */
+#noticed a {
+    color: black;
+}
+
+#noticed span {
+    font-size: 0.4rem;
+}
+
+#myTabContent .card a {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 15%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    /* 指定需要显示的行数 */
+}

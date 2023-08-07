@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <style>
+        .card {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="nav">
+            <div class="container-fluid mx-3 justify-content-between">
+                <a class="navbar-brand w-l" href="#" id="nav_logo">
+                    <img src="https://szlib.org.cn/media/images/logo.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav px-2" id="nav_items">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./新闻资讯.html">新闻资讯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">资源导航</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./服务指南.html">服务指南</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./图书馆网.html">图书馆网</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./关于深图.html">关于深图</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex d-md-none" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container mt-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="bbreadcrumb-item">我的位置：</li>
+                    <li class="breadcrumb-item"><a href="./index.html"
+                            style="text-decoration: none; color: rgb(89, 92, 95);">首页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: blue;">
+                        <a href="./服务指南.html" style="text-decoration: none;">服务指南</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- 服务指南 -->
+    <section>
+        <div class="container bg-white">
+            <h2 class="text-center mx-auto">服务指南
+                <hr>
+            </h2>
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px; border: none; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_3.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">读者须知与办证指南</h5>
+                                    <p class="card-text" style="color: gray;">读者阅览图书、搜寻资讯及参与图书馆活动的公共文化场所，公共资源的有限性与大众需求。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px; border: none; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_4.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">服务区布局</h5>
+                                    <p class="card-text" style="color: gray;">深圳图书馆的布局由3D动态图组成，可以更直接更详细了解图书馆的整体规划。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px; border: none; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_5.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">书刊借阅服务</h5>
+                                    <p class="card-text" style="color: gray;">实行“全面开放、免证进馆、分层管理、一卡通行”方式，全面推行开架阅览、自助服务。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px; border: none; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_6.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">网络与数字资源服务</h5>
+                                    <p class="card-text" style="color: gray;">
+                                        深圳图书馆现拥有数据库46个，包括电子期刊2398974册，电子图书1327061种；均免费提供服务。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3"
+                        style="max-width: 540px; border: none; margin-top: 0px; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_7.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">参考咨询与专题服务</h5>
+                                    <p class="card-text" style="color: gray;">参考信息服务提供的服务有常见问题、问图书馆员、课题服务等。可通过多种在线方式咨询。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3"
+                        style="max-width: 540px; border: none; margin-top: 0px; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_15.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">少儿服务</h5>
+                                    <p class="card-text" style="color: gray;">为13周岁以下少年儿童提供办证、图书借还、阅读指导服务，以及组织阅读推广活动等。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-lg-4">
+
+                    <div class="card mb-3" style="max-width: 540px; border: none; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/img_service_8.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">阅读推广服务</h5>
+                                    <p class="card-text" style="color: gray;">
+                                        致力于全民阅读的推广，优化并完善服务平台，促进阅读理念传播，倡导爱读书，营造阅读文化氛围。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3"
+                        style="max-width: 540px; border: none; margin-top: 30px; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/1405303411739.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">语音/电话系统</h5>
+                                    <p class="card-text" style="color: gray;">
+                                        可以获取图书馆每个服务区域的联系电话。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="card mb-3"
+                        style="max-width: 540px; border: none;margin-top: 0px; background-color: #ff000000;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/1405303426930.png" class="img-fluid rounded-start" alt="..."
+                                    style="display: block; margin: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">移动服务门户</h5>
+                                    <p class="card-text" style="color: gray;">
+                                        移动图书馆以深圳文献港为基础，对各个图书馆的中外文图书、期刊、报纸、学位论文、标准、专利等文献进行了全面整合。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <section>
+        <footer class="bg-dark text-white pt-3 mt-5" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">相关服务</h5>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">城市街区自助图书馆</a></li>
+                                    <li><a href="#">少儿服务</a></li>
+                                    <li><a href="#">预借服务</a></li>
+                                    <li><a href="#">文献转借服务</a></li>
+                                    <li><a href="#">新书直通车服务</a></li>
+                                    <li><a href="#">移动服务</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">短信服务</a></li>
+                                    <li><a href="#">文献传递</a></li>
+                                    <li><a href="#">定题服务</a></li>
+                                    <li><a href="#">深圳捐赠换书中心(芳名录)</a></li>
+                                    <li><a href="#">数字资源馆外访问</a></li>
+                                    <li><a href="#">馆外调阅服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">常用网站</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">中国图书馆学会</a></li>
+                            <li><a href="#">广东图书馆学会</a></li>
+                            <li><a href="#">深圳图生情报学会</a></li>
+                            <li><a href="#">地方版文献联合采编协作网</a></li>
+                            <li><a href="#">ILAS图书馆管理系统</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-12 d-none d-sm-block">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="./images/footer-icon-wb.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-icon-wx.png" alt="" class="img-fluid">
+                                <p>微信</p>
+                            </div>
+                        </div>
+                        <div class="row text-center mt-2">
+                            <div class="col">
+                                <img src="./images/footer-icon-dy.png" alt="" class="img-fluid">
+                                <p>抖音</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-bszs.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p>&copy; 深圳图书馆-许诗嘉</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

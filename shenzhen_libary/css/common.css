@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#footer {
+    background: url("../images/footer-bg.png") right bottom no-repeat;
+    background-size: 45% auto;
+    text-decoration: none;
+}
+
+#footer img {
+    width: 80px;
+    height: 80px;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    #nav_logo {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+    .col #end_box button {
+        font-size: 0.2rem;
+    }
+
+    .col #end_box .card-text {
+        font-size: 0.7rem;
+        padding-bottom: 10%;
+    }
+
+    #activity .box {
+        border: none;
+    }
+
+    #myTabContent .card .card-body a {
+        font-size: 0.7rem;
+    }
+
+    #venue_layout .card {
+        width: 0;
+    }
+
+    .nav-pills .nav-link {
+        width: 60px;
+    }
+
+    #resource .col-lg-10 {
+        width: 100%;
+    }
+
+    #myTab button {
+        font-size: 0.9rem;
+    }
+
+    #v-pills-tabContent .col:nth-child(n+2) {
+        margin: 0;
+    }
+    #footer {
+        background: url("../images/footer-bg.png") right bottom no-repeat;
+        background-size:400px auto;
+        text-decoration: none;
+    }
+    #footer .mb-4 {
+        margin-bottom: 0;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link:focus,
+.nav-link:active:focus,
+.nav-link.active:focus,
+.nav-link.focus,
+.nav-link:active.focus,
+.nav-link.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a {
+    transition: color 0.3s;
+    /* 添加过渡效果 */
+}
+
+a:hover {
+    color: rgb(7, 10, 201);
+    /* 设置鼠标经过时的颜色 */
+}

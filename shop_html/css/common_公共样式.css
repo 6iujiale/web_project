@@ -1,0 +1,257 @@
+/* 版心 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+/* 快捷导航 */
+.shortcut{
+    height: 30px;
+    background-color: #F1F1F1;
+    font-size: 13px;
+    color: #646464;
+    line-height: 30px;
+    
+}
+
+.shortcut ul li{
+   float: left;
+}
+
+.shortcut .fr ul li{
+margin: 0 8px;
+}
+
+.shortcut .fr .xiala_icon::after{
+    content:"";
+    background-image: url(../images/下拉.png);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    background-size: 100%;
+}
+
+/* 头部导航 */
+.header{
+    height: 105px;
+    position: relative;/*子绝父相调整位置*/
+}
+
+.header .search,
+.hotwords{
+    width: 542px;
+    position: absolute;
+    left: 329px;
+}
+
+.header .logo{
+    width: 173px;
+    height: 63px;
+    position: absolute;
+    top: 21px;
+}
+
+.header .logo a{
+    width: 173px;
+    height: 63px;
+    display: block;
+    font-size: 0;
+    background-image: url(../images/pylogo.png);
+    background-repeat: no-repeat;
+   
+}
+
+.header .search{
+    height: 40px;
+    background-color: #B3191B;
+    top: 21px;
+    
+}
+
+.header .search input{
+    width: 454px;
+    height: 100%;
+    outline: none;
+    border: 2px solid #B3191B;
+    text-indent: 1em;
+}
+
+.header .search button{
+    border-style:none;
+    background-color: #B3191B;
+    color: #ffff;
+    margin-left: 20px;
+}
+
+.header .hotwords{
+    height: 20px;
+    bottom: 20px;
+}
+
+.header .hotwords a{
+    padding-right: 25px;
+}
+
+.header .shopcar{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #dfdfdf;
+    background-color: #F7F7F7;
+    right:112px;
+    top: 21px;
+}
+
+.header .shopcar::after{
+    content: ">";    
+}
+
+.header .shopcar .cont{
+    height: 14px;
+    width: 18px;
+    line-height: 14px;
+    text-align: center;
+    background-color:red;
+    color: #ffff;
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+/* nav导航模块 */
+.nav{
+    height: 47px;
+    border-bottom: 2px solid #b1191a;  
+}
+
+.nav .dropdown{
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+    color: #FBFFFD;
+}
+
+.nav .dropdown .dt{
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.nav .dropdown .dd{
+    width: 210px;
+    height: 465px;
+    background-color: #C81622;
+    display: inline-block;
+    /* display: none; */
+
+}
+
+.nav .dropdown .dd ul  li {
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    position: relative;
+}
+
+.nav .dropdown .dd li a{
+    color: #FBFFFD;
+    font-size: 14px;
+    padding-left: 12px;
+    display: block;
+}
+
+.nav .dropdown .dd li::after{
+    content: ">";   
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.nav .dropdown .dd li :hover{
+    background-color:  #FBFFFD;
+    color: #b1191a;
+}
+
+.nav .navitems{
+    width: 736px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.nav .navitems a{
+    font-size: 16px;
+    margin-right: 45px;
+    line-height: 45px;
+}
+
+.footer{
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 24px;
+    
+}
+
+.footer .mod-service{
+    height: 80px;
+    border-bottom: 1px solid #ccc;  
+}
+
+.footer .mod-service li{
+    float: left;
+    width: 300px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.footer .mod-service h5{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 8px;
+}
+
+.footer .mod-service .service-text h4{
+    font-size: 14px;
+}
+
+.footer .mod-service .service-text p{
+    font-size: 12px;
+}
+
+.footer .mod-help{
+    height: 170px;
+    margin-top: 24px;
+    padding-left: 50px;
+    border-bottom: 1px solid #ccc;  
+}
+
+.footer .mod-help dl{
+    float: left;
+    margin-right: 120px;
+}
+
+.footer .mod-help dl dt{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.footer .mod_copyright {
+    height: 69px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer .mod_copyright .links a::after{
+    content: "|";
+    padding-right: 15px;
+}

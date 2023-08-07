@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="nav">
+            <div class="container-fluid mx-3 justify-content-between">
+                <a class="navbar-brand w-l" href="#" id="nav_logo">
+                    <img src="https://szlib.org.cn/media/images/logo.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav px-2" id="nav_items">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./新闻资讯.html">新闻资讯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">资源导航</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./服务指南.html">服务指南</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./图书馆网.html">图书馆网</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./关于深图.html">关于深图</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex d-md-none" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- 位置 -->
+    <section>
+        <div class="container  mt-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="bbreadcrumb-item">我的位置：</li>
+                    <li class="breadcrumb-item"><a href="./index.html"
+                            style="text-decoration: none; color: rgb(89, 92, 95);">首页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: blue;">
+                        <a href="./图书馆网.html" style="text-decoration: none;">图书官网</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- 主体 -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mx-auto mt-3">图书馆网
+                <hr>
+            </h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4 text-lg-start text-md-center text-sm-center">
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">深圳市“图书馆之城”</h5>
+                            <p class="card-text">
+                                2003年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证</p>
+                            <a href="#" class="btn btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/network_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">“深圳文献港”</h5>
+                            <p class="card-text">
+                                以“合作、共享、整合、开放”为宗旨,深圳图书馆、深圳科技图书馆、深圳大学图书馆等联合创建的集数字资源统一发现、读者统一认证、联合文献传递为一体的数字</p>
+                            <a href="#" class="btn btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/network_5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">文化信息资源共享工程</h5>
+                            <p class="card-text">
+                                全国文化信息资源共享工程是由国家文化部、财政部共同组织实施，采用现代信息技术，对全国现有各门类的文化信息资源进行数字化处理和加工整合...</p>
+                            <a href="#" class="btn btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/network_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">深圳市“图书馆之城”</h5>
+                            <p class="card-text">
+                                2003年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证</p>
+                            <a href="#" class="btn btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="card">
+                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">深圳市“图书馆之城”</h5>
+                            <p class="card-text">
+                                2003年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证</p>
+                            <a href="#" class="btn btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/network_4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">深圳市“图书馆之城”</h5>
+                            <p class="card-text">
+                                2003年起步的深圳市“图书馆之城”建设已在全市构建起资源丰富、设施先进、服务便利的图书馆网络，实现了市、区、街道、社区几百家图书馆及自助图书馆的一证</p>
+                            <a href="#" class="btn btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <section>
+        <footer class="bg-dark text-white pt-3 mt-5" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">相关服务</h5>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">城市街区自助图书馆</a></li>
+                                    <li><a href="#">少儿服务</a></li>
+                                    <li><a href="#">预借服务</a></li>
+                                    <li><a href="#">文献转借服务</a></li>
+                                    <li><a href="#">新书直通车服务</a></li>
+                                    <li><a href="#">移动服务</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">短信服务</a></li>
+                                    <li><a href="#">文献传递</a></li>
+                                    <li><a href="#">定题服务</a></li>
+                                    <li><a href="#">深圳捐赠换书中心(芳名录)</a></li>
+                                    <li><a href="#">数字资源馆外访问</a></li>
+                                    <li><a href="#">馆外调阅服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6 mb-lg-4 mb-md-4 mb-sm-0">
+                        <h5 class="mb-3">常用网站</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">中国图书馆学会</a></li>
+                            <li><a href="#">广东图书馆学会</a></li>
+                            <li><a href="#">深圳图生情报学会</a></li>
+                            <li><a href="#">地方版文献联合采编协作网</a></li>
+                            <li><a href="#">ILAS图书馆管理系统</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-12 d-none d-sm-block">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="./images/footer-icon-wb.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-icon-wx.png" alt="" class="img-fluid">
+                                <p>微信</p>
+                            </div>
+                        </div>
+                        <div class="row text-center mt-2">
+                            <div class="col">
+                                <img src="./images/footer-icon-dy.png" alt="" class="img-fluid">
+                                <p>抖音</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/footer-bszs.png" alt="" class="img-fluid">
+                                <p>微博</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p>&copy; 深圳图书馆-刘佳乐</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

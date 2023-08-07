@@ -1,0 +1,196 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.card {
+    height: 460px;
+}
+
+.card a {
+    font-size: 30px;
+    color: black;
+}
+
+.card a:hover {
+    color: red;
+}
+
+.card .card-body {
+    font-size: 60px;
+}
+
+.card .card-body #shi,
+#ci,
+#qu {
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-body #shi {
+    background: url("../images/card_bg1.jpg") no-repeat center;
+    background-size: 100% 100%;
+
+}
+
+
+.card .card-body h5{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.card .card-body p {
+    color: #676769;
+    /*设置文字颜色*/
+    font-size: 30px;
+    /*设置字体大小*/
+    font-weight: bolder;
+    /*设置字体粗细*/
+    -webkit-animation: card-body 4s infinite;
+
+}
+
+@-webkit-keyframes card-body {
+
+    /*创建动画*/
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+.card .card-body #ci {
+    background: url("../images/card_bg2.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.card .card-body #qu {
+    background: url("../images/card_bg3.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+#good_poetry_list {
+    background-color: rgb(220, 218, 218);
+}
+
+#good_poetry_list .list li {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0px;
+    background-color: rgba(190, 192, 196, 0.5);
+    line-height: 60px;
+    padding: 0px 5px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+
+#good_poetry_list .list li a {
+    font-size: 16px;
+    padding: 0px 6px;
+}
+
+#good_poetry_list .list li small {
+    font-size: 12px;
+    display: block;
+    color: rgb(58, 57, 57);
+}
+
+#good_poetry_list .list li span {
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: wheat;
+    position: absolute;
+    right: 6%;
+    line-height: 30px;
+    top: 30%;
+    text-align: center;
+    font-style: italic;
+}
+
+#column_introduction {
+    height: 600px;
+    background-color: white;
+}
+
+#column_introduction .info {
+    width: 100%;
+    height: 200px;
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+/* #column_introduction .hot {
+    border: 1px solid black;
+} */
+
+#column_introduction .hot img {
+    height: 80%;
+    width: 30px;
+}
+
+#column_introduction .info p {
+    font-size: 16px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#column_introduction .hot a {
+    width: 100%;
+    height: 34px;
+    display: block;
+    /* background-color: pink; */
+    margin: 6px 0px;
+    position: relative;
+    border: 1px solid black;
+}
+
+#column_introduction .hot em {
+    position: absolute;
+    right: 10%;
+    font-size: 8px;
+    bottom: 10%;
+}
+
+#good_poetry .content {
+    height: 190px;
+    background-color: rgb(220, 218, 218);
+    text-align: center;
+}
+
+#good_poetry .content h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 6px;
+}
+
+#good_poetry .content p {
+    font-size: 16px;
+    -webkit-line-clamp: 5;
+    padding: 5px;
+}
+
+#good_poetry #good_poetry_box {
+    background-color: #a09c9c;
+}
+
+#good_poetry img,
+#new_power img {
+    width: 160px;
+    height: 160px;
+    vertical-align: baseline
+}

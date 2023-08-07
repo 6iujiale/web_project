@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/poetry.css">
+    <style>
+        @media screen and (max-width:576px) {
+            .card {
+                height: 360px;
+            }
+
+            #good_poetry .content {
+                margin-top: 10px;
+            }
+
+            #good_poetry #good_poetry_box {
+                margin-top: 10px;
+            }
+
+            .card .card-body h5 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .card .card-body p {
+                /*设置文字颜色*/
+                font-size: 16px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <!-- 头部顶部 -->
+            <div class="row row_x border-bottom border-4 border-danger mb-2 bg-white" id="header_tp">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <!-- 网站logo -->
+                    <div class="logo">
+                        <img src="./images/header_logo.png" alt="">
+                    </div>
+                    <!-- 用户信息 -->
+                    <div class="user d-flex flex-row align-items-end justify-content-center mx-3">
+                        <img src="./images/header_user.jpg" alt="用户头像"
+                            class="img-thumbnail rounded-circle border-danger border-1">
+                        <a href="./login.html"><span style="color: black;">刘佳乐</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 头部尾部 -->
+            <div class="row" id="header_bm">
+                <!-- 导航栏-诗文 -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-2 d-flex" id="nav_list">
+                    <a href="./poetry.html" class="nav_title my-auto flex-wrap">诗文</a>
+                    <div class="nav_list_right d-flex flex-row" style="flex-flow:row wrap">
+                        <a href="#">唐诗三百首</a>
+                        <a href="#">古诗三百</a>
+                        <a href="#">宋词三百</a>
+                        <a href="#">小学古诗</a>
+                        <a href="#">宋词三百</a>
+                        <a href="./index.html" style="font-size: 19px;color: red;">首页</a>
+                    </div>
+                </div>
+                <!-- 导航栏-名句 -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-2 d-flex" id="nav_list">
+                    <a href="./famous_ sentence.html" class="nav_title my-auto flex-wrap">名句</a>
+                    <div class="nav_list_right d-flex flex-row" style="flex-flow:row wrap">
+                        <a href="#">季节</a>
+                        <a href="#">离别</a>
+                        <a href="#">爱国</a>
+                        <a href="#">爱情</a>
+                        <a href="#">祖国河山</a>
+                        <a href="#">思念故乡</a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!-- 导航栏-诗人 -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-2 d-flex" id="nav_list">
+                    <a href="./author.html" class="nav_title my-auto flex-wrap">诗人</a>
+                    <div class="nav_list_right d-flex flex-row" style="flex-flow:row wrap">
+                        <a href="#">名家</a>
+                        <a href="#">专栏</a>
+                        <a href="#">访谈</a>
+                        <a href="#">李白</a>
+                        <a href="#">李清照</a>
+                        <a href="#">唐宋八大家</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 模块一 类型选择 -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <h3 class="text-center" style="font-size: 50px; color: rgb(223, 47, 47);font-weight: bold;">诗歌分类</h3>
+            </div>
+            <div class="col-12" id="type_select">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" style="color: black;background-color: white;">音律</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#box1">表达</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">题材</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div style="display:block" id="shi">
+                            <h5 class="pt-3">按音律分类</h5>
+                            <p class="pt-1">分为古体诗和近体诗两类</p>
+                            <p>古体诗和近体诗是唐代形成的概念</p>
+                        </div>
+                        <div style="display: none;" id="ci">
+                            <h5 class="pt-3">按表达分类</h5>
+                            <p class="pt-1">分为叙事诗，代表作《木兰诗》</p>
+                            <p>分为抒情诗，代表作《游子吟》</p>
+                            <p>分为哲理诗，代表作《题西林壁》</p>
+                        </div>
+                        <div style="display: none;" id="qu">
+                            <h5 class="pt-3">按题材来分</h5>
+                            <p class="pt-1">分为边塞诗，代表作《出塞･其一》</p>
+                            <p>分为山水田园诗，代表作《渭川田家》</p>
+                            <p>分为咏史怀古诗，代表作《满江红·赤壁怀古》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 模块二 榜单 -->
+        <div class="row mt-4">
+            <div class="col-12 border-bottom border-danger border-4">
+                <h4 class="module_title">榜单</h4>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="good_poetry_list">
+                <div class="hd my-2">
+                    <h6 style="font-size: 22px;">每日好诗</h6>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 list">
+                        <ul>
+                            <li class="d-flex flex-row justify-content-between" style="margin-top: 5px;">
+                                <h4>
+                                    <a class="">虞美人</a>
+                                    <small> | 李煜</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">静夜思</a>
+                                    <small> | 李白</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">沁园春·雪</a>
+                                    <small> | 毛泽东</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">饮酒·结庐在人境</a>
+                                    <small> | 陶渊明</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">念奴娇·赤壁怀古</a>
+                                    <small> | 苏轼</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="#">水调歌头·明月几时有</a>
+                                    <small> | 苏轼</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">永遇乐·京口北固亭怀古</a>
+                                    <small> | 辛弃疾</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 list">
+                        <ul>
+                            <li class="d-flex flex-row justify-content-between" style="margin-top: 5px;">
+                                <h4>
+                                    <a class="">登高</a>
+                                    <small> | 杜甫</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">江南春</a>
+                                    <small> | 杜牧</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">黄鹤楼</a>
+                                    <small> | 崔颢</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">声声慢·寻寻觅觅</a>
+                                    <small> | 李清照</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">满江红·怒发冲冠</a>
+                                    <small> | 岳飞</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">菩萨蛮·书江西造口壁</a>
+                                    <small> | 辛弃疾</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                            <li class="d-flex flex-row justify-content-between">
+                                <h4>
+                                    <a class="">临江仙·滚滚长江东逝水</a>
+                                    <small> | 杨慎</small>
+                                    <span>2023-04-14</span>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 栏目介绍 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" id="column_introduction">
+                <div class="h my-2">
+                    <h6 style="font-size: 22px;">栏目简介</h6>
+                </div>
+                <div class="bd d-flex flex-column">
+                    <div class="info">
+                        <p>诗文是诗词旺的重点栏目，集中优选本站网友的原创诗作，每日推荐。</p>
+                        <p>在这里，会展现最优秀的诗作，会集中诗坛优秀诗人。</p>
+                        <p>欢迎广大诗人注册会员并踊跃发诗！</p>
+                    </div>
+                    <div class="hot mt-5">
+                        <h5>诗人热力榜</h5>
+                        <a href="#">
+                            <img src="./font/icon_jccegkdyrd/daochu1024-26.svg" alt="">
+                            李白
+                            <em>助力值：12000</em>
+                        </a>
+                        <a href="#">
+                            <img src="./font/icon_jccegkdyrd/daochu1024-27.svg" alt="">
+                            杜甫
+                            <em>助力值：11000</em>
+                        </a>
+                        <a href="#">
+                            <img src="./font/icon_jccegkdyrd/daochu1024-28.svg" alt="">
+                            白居易
+                            <em>助力值：10000</em>
+                        </a>
+                        <a href="#" class="px-2">李清照
+                            <em>助力值：10000</em>
+                        </a>
+                        <a href="#" class="px-2">辛弃疾
+                            <em>助力值：10000</em>
+                        </a>
+                        <a href="#" class="px-2">陶渊明
+                            <em>助力值：10000</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 模块三 好诗 -->
+        <div class="row mt-4" id="good_poetry">
+            <div class="col-12 border-bottom border-danger border-4">
+                <h4 class="module_title">推荐</h4>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 " id="good_poetry_box">
+                <div class="content mb-2">
+                    <h5>《水调歌头·明月几时有》</h5>
+                    <p class="overflow_p">
+                        是宋代大文学家苏轼于公元1076年（宋神宗熙宁九年）中秋在密州时所作。这首词把人世间的悲欢离合之情纳入对宇宙人生的哲理性追寻之中，反映了作者复杂而又矛盾的思想感情，又表现出作者热爱生活与积极向上的乐观精神。
+                    </p>
+                </div>
+                <img src="./images/good_poetry_img2.png" class="img-fluid center-block mx-auto d-block"
+                    style="border-radius:50% ">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 " id="good_poetry_box">
+                <img src="./images/good_poetry_img1.png" class="img-fluid center-block mx-auto d-block mb-2"
+                    style="border-radius:50% ">
+                <div class="content">
+                    <h5>《沁园春·雪》</h5>
+                    <p class="overflow_p">
+                        是毛泽东于1936年2月创作的一首词。诗词分上下两阕，上阕描写乍暖还寒的北国雪景，展现伟大祖国的壮丽山河；下阕由毛泽东主席对祖国山河的壮丽而感叹，并引出秦皇汉武等英雄人物，纵论历代英雄人物。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 " id="good_poetry_box">
+                <div class="content mb-2">
+                    <h5>《天净沙·秋思》</h5>
+                    <p class="overflow_p">是宋代文学家苏轼的代表作，全词借古抒怀，雄浑苍凉，大气磅礴，笔力遒劲，境界宏阔，将写景、咏史、抒情融为一体，给人以撼魂荡魄的艺术力量，曾被誉为“古今绝唱”
+                    </p>
+                </div>
+                <img src="./images/good_poetry_img2.png" class="img-fluid center-block mx-auto d-block"
+                    style="border-radius:50% ">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 " id="good_poetry_box">
+                <img src="./images/good_poetry_img3.png" class="img-fluid center-block mx-auto d-block mb-2"
+                    style="border-radius:50% ">
+                <div class="content">
+                    <h5>《声声慢·寻寻觅觅》</h5>
+                    <p class="overflow_p">是宋代女词人李清照的作品，通过描写残秋所见、所闻、所感，抒发自己因国破家亡、天涯沦落而产生的孤寂落寞、悲凉愁苦的心绪，具有浓厚的时代色彩。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- 页脚左盒子 -->
+                <div class="col-xs-12 col-sm-8 col-md-8" id="ft_left">
+                    <h5 class="my-2">
+                        站点声明
+                    </h5>
+                    <ul>
+                        <li>1、本站创建目的为了诗词的学习和交流</li>
+                        <li>2、本站的学习文章经供参考，可转载，但不能用于商业目的</li>
+                        <li>3、对于本站有疑问或好的建议，欢迎邮箱123456@qq.com投稿</li>
+                    </ul>
+                </div>
+                <!-- 页脚右盒子 -->
+                <div class="col-xs-12 col-sm-4 col-md-4" id="ft_right">
+                    <div class="contact">
+                        <img src="./images/footer_right_wx.jpg " class="img-fluid d-block mx-auto mt-2">
+                        <span class="mb-2 mx-auto">微信号</span>
+                    </div>
+                    <div class="contact mx-2">
+                        <img src="./images/footer_right_wb.jpg" class="img-fluid d-block mx-auto mt-2">
+                        <span class="mb-2 mx-auto">微博号</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous">
+    </script>
+    <script src="./js/poetry.js"></script>
+</body>
+
+</html>

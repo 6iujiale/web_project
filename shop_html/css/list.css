@@ -1,0 +1,49 @@
+.nav{
+    overflow: hidden;
+}
+
+.nav .sk_list a{
+    font-size: 16px;
+    font-weight: 700;
+    padding:  30px;
+    line-height: 47px;
+    color: #1C0000;
+}
+
+.nav .sk_con a{
+  font-size: 14px;
+  line-height: 49px;
+  padding: 0 15px;
+}
+
+.nav .sk_con a:nth-child(9)::after{
+    content: "";
+    background-image: url('../images/下拉.png');
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    background-size: 100%;
+}
+
+.sk_container .sk_hd{
+    height: 116px;
+    background-color: pink;
+}
+
+.sk_container .sk_bd{
+    margin-top: 15px;
+    height: 1400px;
+}
+
+.sk_container .sk_bd li{
+    float: left;
+    width: 290px;
+    height: 460px;
+    border: 2px solid transparent;/*影响盒子大小，盒子抖动*/
+    overflow: hidden;
+}
+
+.sk_container .sk_bd li:hover{
+    border: 2px solid red;
+}

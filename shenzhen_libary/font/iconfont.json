@@ -1,0 +1,184 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201652",
+      "name": "3.1 下拉",
+      "font_class": "31xiala",
+      "unicode": "f0221",
+      "unicode_decimal": 983585
+    },
+    {
+      "icon_id": "1489095",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "3885971",
+      "name": "服务",
+      "font_class": "_fuwu",
+      "unicode": "e827",
+      "unicode_decimal": 59431
+    },
+    {
+      "icon_id": "8843484",
+      "name": "折叠",
+      "font_class": "zhedie",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "10056801",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "16663283",
+      "name": "上拉",
+      "font_class": "shangla",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "18610495",
+      "name": "资源",
+      "font_class": "ziyuan",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "35794412",
+      "name": "-book-_1",
+      "font_class": "-book-_1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "35794423",
+      "name": "-conversation",
+      "font_class": "-conversation",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "35794430",
+      "name": "-folders-",
+      "font_class": "-folders-",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "35794436",
+      "name": "-lottery",
+      "font_class": "-lottery",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "35794442",
+      "name": "-notes",
+      "font_class": "-notes",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "35794444",
+      "name": "-online",
+      "font_class": "-online",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "35794448",
+      "name": "-online-education-_5",
+      "font_class": "-online-education-_5",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "35794450",
+      "name": "-open-book",
+      "font_class": "-open-book",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "35794453",
+      "name": "-online-education-_4",
+      "font_class": "-online-education-_4",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "35794454",
+      "name": "-professor-",
+      "font_class": "-professor-",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "35794457",
+      "name": "-reading",
+      "font_class": "-reading",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "35794461",
+      "name": "-tic-tac-toe",
+      "font_class": "-tic-tac-toe",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "35794462",
+      "name": "-student-",
+      "font_class": "-student-",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "35794468",
+      "name": "-settings",
+      "font_class": "-settings",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "35794469",
+      "name": "-teaching",
+      "font_class": "-teaching",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "35794473",
+      "name": "-to-do",
+      "font_class": "-to-do",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "35794475",
+      "name": "-teacher",
+      "font_class": "-teacher",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "35794477",
+      "name": "-teacher-",
+      "font_class": "-teacher-",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    }
+  ]
+}
